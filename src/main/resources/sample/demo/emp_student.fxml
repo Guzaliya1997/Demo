@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="765.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo.Emp_Student_Controller">
+   <children>
+      <TableView fx:id="table" layoutX="20.0" layoutY="14.0" prefHeight="347.0" prefWidth="1138.0">
+        <columns>
+          <TableColumn fx:id="s_tbl1" prefWidth="32.0" text="ID" />
+          <TableColumn fx:id="s_tbl2" minWidth="0.0" prefWidth="140.0" text="ФИО студента" />
+            <TableColumn fx:id="s_tbl3" minWidth="0.0" prefWidth="88.0" text="Номер группы" />
+            <TableColumn fx:id="s_tbl4" minWidth="0.0" prefWidth="102.0" text="Дата рождения" />
+            <TableColumn fx:id="s_tbl5" prefWidth="124.0" text="Адрес проживания" />
+            <TableColumn fx:id="s_tbl6" minWidth="0.0" prefWidth="71.0" text="№ зачетки" />
+            <TableColumn fx:id="s_tbl7" prefWidth="36.0" text="Курс" />
+            <TableColumn fx:id="s_tbl8" prefWidth="103.0" text="Номер специальности" />
+            <TableColumn fx:id="s_tbl9" prefWidth="109.0" text="Форма обучения" />
+            <TableColumn fx:id="s_tbl10" prefWidth="113.0" text="Год поступления" />
+            <TableColumn fx:id="s_tbl11" minWidth="0.0" prefWidth="106.0" text="Год завершения" />
+            <TableColumn fx:id="s_tbl12" minWidth="0.0" prefWidth="112.0" text="Форма оплаты обучения" />
+        </columns>
+      </TableView>
+      <Pane layoutX="34.0" layoutY="401.0" prefHeight="210.0" prefWidth="1138.0" style="-fx-background-color: #ADD8E6;" />
+      <TextField fx:id="std_f2" layoutX="114.0" layoutY="437.0" />
+      <TextField fx:id="std_f3" layoutX="120.0" layoutY="501.0" />
+      <TextField fx:id="std_f10" layoutX="645.0" layoutY="562.0" />
+      <TextField fx:id="std_f11" layoutX="916.0" layoutY="437.0" />
+      <TextField fx:id="std_f12" layoutX="918.0" layoutY="501.0" />
+      <TextField fx:id="std_f4" layoutX="120.0" layoutY="562.0" />
+      <TextField fx:id="std_f7" layoutX="375.0" layoutY="562.0" />
+      <TextField fx:id="std_f5" layoutX="375.0" layoutY="437.0" />
+      <TextField fx:id="std_f8" layoutX="645.0" layoutY="437.0" />
+      <TextField fx:id="std_f9" layoutX="645.0" layoutY="501.0" />
+      <TextField fx:id="std_f6" layoutX="375.0" layoutY="501.0" />
+      <Text fx:id="std_txt2" layoutX="149.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО студента" />
+      <Text fx:id="std_txt3" layoutX="161.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер группы" />
+      <Text fx:id="std_txt4" layoutX="146.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата рождения" />
+      <Text fx:id="std_txt5" layoutX="397.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Адрес проживания" />
+      <Text fx:id="std_txt6" layoutX="428.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="№ зачетки" />
+      <Text fx:id="std_txt7" layoutX="437.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Курс" />
+      <Text fx:id="std_txt8" layoutX="673.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер специальности" />
+      <Text fx:id="std_txt9" layoutX="680.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Форма обучения" />
+      <Text fx:id="std_txt10" layoutX="680.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Год поступления" />
+      <Text fx:id="std_txt12" layoutX="938.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Форма оплаты обучения" />
+      <Text fx:id="std_txt11" layoutX="948.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Год завершения" />
+      <Button fx:id="st_btn_add" layoutX="264.0" layoutY="628.0" mnemonicParsing="false" onAction="#Add" prefHeight="25.0" prefWidth="121.0" text="ADD" />
+      <Button fx:id="st_btn_update" layoutX="528.0" layoutY="628.0" mnemonicParsing="false" onAction="#Update" prefHeight="25.0" prefWidth="121.0" text="UPDATE" />
+      <Button fx:id="st_btn_delete" layoutX="816.0" layoutY="628.0" mnemonicParsing="false" onAction="#Delete" prefHeight="25.0" prefWidth="121.0" text="DELETE" />
+      <Button fx:id="emp_st_back_btn" layoutX="588.0" layoutY="699.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" text="BACK" />
+   </children>
+    
+</AnchorPane>

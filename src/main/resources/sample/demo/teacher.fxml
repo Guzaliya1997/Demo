@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo.Teacher_Controller">
+   <children>
+      <Label fx:id="label" layoutX="328.0" layoutY="39.0" text="Расписание">
+         <font>
+            <Font name="Tahoma Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_f" layoutX="375.0" layoutY="142.0" />
+      <Text fx:id="txt" layoutX="247.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВЕДИТЕ ФАМИЛИЮ И ИНИЦИАЛЫ ПРЕПОДАВАТЕЛЯ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="anchor" layoutX="22.0" layoutY="222.0" prefHeight="460.0" prefWidth="860.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TableView fx:id="table" layoutX="8.0" layoutY="1.0" prefHeight="402.0" prefWidth="832.0">
+               <columns>
+                  <TableColumn fx:id="subject_name" prefWidth="119.0" text="subject_name" />
+                  <TableColumn fx:id="group_number" prefWidth="119.0" text="group_number" />
+                  <TableColumn fx:id="week_day" prefWidth="119.0" text="week_day" />
+                  <TableColumn fx:id="week_type" prefWidth="119.0" text="week_type" />
+                  <TableColumn fx:id="start_time" prefWidth="119.0" text="start_time" />
+                  <TableColumn fx:id="end_time" prefWidth="119.0" text="end_time" />
+                  <TableColumn fx:id="teachers_name" prefWidth="122.39999999999998" text="teachers_name" />
+               </columns>
+            </TableView>
+            <ScrollBar layoutX="839.0" layoutY="2.0" orientation="VERTICAL" prefHeight="402.0" prefWidth="14.0" />
+            <Button fx:id="back_btn" layoutX="749.0" layoutY="421.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" text="Back" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
